@@ -1,0 +1,195 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	text-align: center;
+}
+
+.wrapper {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+header {
+	height: 100px;
+	background: #262626;
+	width: 100%;
+	z-index: 10;
+	position: fixed;
+}
+
+.logo {
+	width: 30%;
+	float: left;
+	line-height: 100px;
+}
+
+.logo a {
+	text-decoration: none;
+	font-size: 30px;
+	font-family: poppins;
+	color: #fff;
+	letter-spacing: 5px;
+}
+
+.logo img {
+  height: 15px;
+}
+
+nav {
+	float: right;
+	line-height: 100px;
+}
+
+nav a {
+	text-decoration: none;
+	font-family: poppins;
+	letter-spacing: 4px;
+	font-size: 20px;
+	margin: 0 10px;
+	color: #fff;
+}
+
+.banner-area {
+	width: 100%;
+	height: 500px;
+	position: fixed;
+	top: 90px;
+	background-image: url(https://artebellum-v2-mini.s3-eu-west-1.amazonaws.com/vintage-f1-photography-books-have-been-added-to-the-petrolicious-shop-1ju80yi1x-1-lg.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+}
+
+.banner-area h2 {
+	padding-top: 10%;
+	font-size: 50px;
+	font-family: poppins;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.content-area {
+	width: 100%;
+	position: relative;
+	top: 550px;
+	background: #ebebeb;
+	height: 700px;
+}
+
+.content-area h2 {
+	font-family: poppins;
+	letter-spacing: 4px;
+	padding-top: 30px;
+	font-size: 40px;
+	margin: 0;
+}
+
+.content-area p {
+	padding: 2% 0px;
+	font-family: poppins;
+	line-height: 30px;
+}
+
+.product-area {
+  width: 100%;
+	position: relative;
+	top: 550px;
+	background: gray;
+	height: 700px;
+}
+
+.product-area h2 {
+	font-family: poppins;
+	letter-spacing: 4px;
+	padding-top: 30px;
+	font-size: 40px;
+	margin: 0;
+}
+
+.product-gallery {
+  width: 100%;
+  display: grid;
+  grid-column-gap: 20px;
+  grid-template-columns: repeat(3,380px);
+  grid-template-rows: repeat(1,380px);
+  position: relative;
+	top: 50px;
+	height: 500px;
+}
+
+.product_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.product-gallery figcaption {
+  background-color: black;
+  color: white;
+  font-style: italic;
+  font-size: 20px;
+  padding: 2px;
+  text-align: center;
+  
+}
+
+.product_item--1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.product_item--2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.product_item--3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.form-area {
+	width: 100%;
+	position: relative;
+	top: 550px;
+	background: #262626;
+	height: 400px;
+}
+
+.form-area h2 {
+	font-family: poppins;
+  color: white;
+	letter-spacing: 4px;
+	padding-top: 30px;
+	font-size: 40px;
+	margin: 0;
+}
+
+.form-box {
+  color: white;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: space-between;
+}
+
+.txt-box {
+  width: 200px;
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+       width: 500px;
+    }
+}
